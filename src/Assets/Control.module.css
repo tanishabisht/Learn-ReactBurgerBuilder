@@ -1,10 +1,10 @@
 .BuildControl {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 5px 0;
+    width: 100%;
 }
-
+/* 
 .BuildControl button {
     display: block;
     font: inherit;
@@ -27,30 +27,29 @@
     background-color: #AC9980;
     color: #ccc;
     cursor: not-allowed;
-}
+} */
 
 .Label {
-    padding: 10px;
+    padding: 0.2rem;
     font-weight: bold;
-    width: 80px;
 }
 
-.BuildControl .Less {  
+/* .BuildControl .Less {  
     background-color: #D39952;
     color: white;
-}
+} */
 
-.BuildControl .More {
+/* .BuildControl .More {
     background-color: #8F5E1E;
     color: white;
-}
+} */
 
-.BuildControl .Less:hover, .BuildControl .Less:active {  
+/* .BuildControl .Less:hover, .BuildControl .Less:active {  
     background-color: #DAA972;
     color: white;
-}
+} */
 
-.BuildControl .More:hover,.BuildControl .More:active {
+/* .BuildControl .More:hover,.BuildControl .More:active {
     background-color: #99703F;
     color: white;
-}
+} */

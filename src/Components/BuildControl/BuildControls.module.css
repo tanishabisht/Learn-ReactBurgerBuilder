@@ -1,3 +1,13 @@
+.BuildControls {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: auto;
+}
+
+.BuildControls .Heading {
+    margin: 0px;
+}
 
 .OrderButton {
     background-color: #DAD735;
@@ -9,6 +19,7 @@
     font-size: 1.2em;
     padding: 15px 30px;
     box-shadow: 2px 2px 2px #966909;
+    margin-top: 2rem;
 }
 
 .OrderButton:hover, .OrderButton:active {
