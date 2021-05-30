@@ -16,5 +16,8 @@ This application is my goto guide for best practices in React.
     - Aux (Similar to React.Fragment)
   - Pages
 
+## Best Practices
+- Prop Type Validation
+
 ## Stacks Used
-`css modules` `Materialize`
+`css modules` `Materialize` `prop-types`

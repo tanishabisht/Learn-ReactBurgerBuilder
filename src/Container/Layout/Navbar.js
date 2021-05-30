@@ -2,9 +2,9 @@
 const Navbar = () => {
     return (
         <nav>
-            <div class="nav-wrapper container">
-                <a class="brand-logo">BURGER LOGO</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <div className="nav-wrapper container">
+                <a className="brand-logo">BURGER LOGO</a>
+                <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><a>Burger Builder</a></li>
                     <li><a>Order</a></li>
                 </ul>

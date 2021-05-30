@@ -1,13 +1,16 @@
+import { useState } from 'react'
 import { Layout } from '../Container'
 import { Burger } from '../Components'
 
-const lComponent=<h1>HI PEOPLE! I AM THE LEFT COMPONENT</h1>
 const rComponent=<h1>HI PEOPLEeeee! I AM THE RIGHT COMPONENT</h1>
 
 const BurgerBuilder = props => {
-    return (        
-      <Layout lComponent={<Burger/>} rComponent={rComponent} />
-    )
+
+  const [ingredients, setIngredients] = useState({ meat: 10, cheese: 0, salad: 0, bacon: 0 })
+
+  return (        
+    <Layout lComponent={<Burger ingredients={ingredients} />} rComponent={rComponent} />
+  )
 }
 
 export default BurgerBuilder
