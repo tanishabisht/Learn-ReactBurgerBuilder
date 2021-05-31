@@ -46,7 +46,8 @@ const BurgerBuilder = () => {
 
   const lComponent = <Burger ingredients={ingredients} />
 
-  const rComponent = <BuildControls 
+  const rComponent = <BuildControls
+    ingredients={ingredients} 
     totalPrice={totalPrice} 
     addIngredient={addIngredientHandler} 
     removeIngredient={removeIngredientHandler}

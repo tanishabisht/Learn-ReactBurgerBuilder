@@ -1,5 +1,6 @@
 import classes from './BuildControls.module.css'
 import Control from './Control'
+import { OrderModal } from '../index'
 
 const LABEL_TO_TYPE = [
     { label:'Meat', type:'meat' },
@@ -24,7 +25,7 @@ const BuildControls = props => {
             <h3 className={classes.Heading}>Build Controls</h3>
             <h5>The Total Price is $ {props.totalPrice}</h5>
                 {ingredientControls}
-            <button style={{width:'100%', marginTop:'1.5rem'}} className={`${props.orderIsDisabled?'disabled':null} btn waves-effect waves-light teal darken-3`}>Order Now</button>
+            <OrderModal ingredients={props.ingredients} totalPrice={props.totalPrice} orderIsDisabled={props.orderIsDisabled} />
         </div>
     )
 }

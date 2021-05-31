@@ -17,9 +17,12 @@ This application is my goto guide for best practices in React.
   - Pages
 
 ## Best Practices
+- Components should have these two important properties:
+  - Modularity
+  - Reusability
 - Prop Type Validation
+- Proper Segregation for Components managing state
 - Add handler as a suffix to event based functions
-- Have a seperate folder with only those components for handling state management
 
 ## Stacks Used
 `css modules` `Materialize` `prop-types`
