@@ -1,5 +1,5 @@
 import Navbar from './Navbar'
-import Aux from '../../Hoc/Aux'
+import { Aux } from '../index'
 
 const Layout = props => {
     return (
