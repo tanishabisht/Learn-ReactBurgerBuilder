@@ -9,6 +9,7 @@ const Navbar = () => {
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><NavLink to='/' exact activeClassName={classes.Active} >Burger Builder</NavLink></li>
                     <li><NavLink to='/order' exact activeClassName={classes.Active} >Order</NavLink></li>
+                    <li><NavLink to='/form' exact activeClassName={classes.Active} >Form Page</NavLink></li>
                 </ul>
             </div>
         </nav>

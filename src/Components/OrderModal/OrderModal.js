@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
-import { Spinner } from '../index'
+import React, { useEffect, useRef, useState } from 'react'
+import { Spinner } from '../../UI'
 import classes from './OrderModal.module.css'
 import M from "materialize-css"
-import { Aux } from '../../HOC'
 import axios from '../../Config/axios-order'
 
 const OrderModal = props => {
@@ -43,7 +42,7 @@ const OrderModal = props => {
         })
     }
 
-    let orderSummary = <Aux>
+    let orderSummary = <React.Fragment>
       <div className="modal-content">
         <h4>Do you want to Checkout?</h4>
         <p><strong>Total Price: {props.totalPrice}</strong></p>
@@ -54,17 +53,17 @@ const OrderModal = props => {
         <button onClick={() => console.log('disagreed')} className="modal-close waves-effect waves-red btn-flat">NO</button>
         <button onClick={purchaseContHandler} className="modal-close waves-effect waves-green btn-flat">YES</button>
       </div>
-    </Aux>
+    </React.Fragment>
 
     if(isLoading) orderSummary = <Spinner />
 
     return (
-      <Aux>
+      <React.Fragment>
         <button onClick={openModalHandler} style={{width:'100%', marginTop:'1.5rem'}} className={`${props.orderIsDisabled?'disabled':null} btn waves-effect waves-light teal darken-3 modal-trigger`} data-target="orderModal">Order Now</button>
         <div ref={ModalRef} id="orderModal" className="modal" >
           {orderSummary}
         </div>
-      </Aux>
+      </React.Fragment>
     )
 }
 
