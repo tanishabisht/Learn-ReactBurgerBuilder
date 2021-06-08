@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Spinner } from '../index'
 import classes from './OrderModal.module.css'
 import M from "materialize-css"
-import { Aux } from '../../Container'
+import { Aux } from '../../HOC'
 import axios from '../../Config/axios-order'
 
 const OrderModal = props => {
@@ -64,7 +64,6 @@ const OrderModal = props => {
         <div ref={ModalRef} id="orderModal" className="modal" >
           {orderSummary}
         </div>
-        
       </Aux>
     )
 }

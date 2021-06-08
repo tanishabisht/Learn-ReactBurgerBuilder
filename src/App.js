@@ -1,11 +1,19 @@
-import './App.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { BurgerBuilder } from './Pages'
+import { Navbar } from './Components'
+import './App.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <BurgerBuilder />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path='/'><BurgerBuilder/></Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   )
 }
 

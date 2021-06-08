@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Layout } from '../Container'
+import { Switch, Route } from 'react-router-dom'
 import { Burger, BuildControls } from '../Components'
+import { Orders, Checkout } from './'
 
 const INGREDIENT_PRICES = {
   meat: 2,
@@ -56,7 +57,18 @@ const BurgerBuilder = () => {
   />
 
 
-  return <Layout lComponent={lComponent} rComponent={rComponent} />
+  return(
+    <div className='row' style={{margin:0}}>
+      <div style={{minHeight:'91vh'}} className='col m7 teal lighten-2 valign-wrapper'>{lComponent}</div>
+      <div style={{minHeight:'91vh'}} className='col m5 teal lighten-1 valign-wrapper'>
+        <Switch>
+          <Route path='/' exact>{rComponent}</Route>
+          <Route path='/order' exact><Orders/></Route>
+          <Route path='/checkout' exact><Checkout/></Route> 
+        </Switch>
+      </div>                
+    </div>
+  )
 }
 
 export default BurgerBuilder
