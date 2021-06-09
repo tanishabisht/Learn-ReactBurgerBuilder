@@ -8,7 +8,7 @@ const Order = props => {
     return (
         <div className={classes.OrderContainer}>
             <span>
-                INGREDIENTS: {ingredients.map(ig => <span className={classes.IngredientPill}>{ig[0]}:{ig[1]}</span>)}
+                INGREDIENTS: {ingredients.map(ig => <span key={ig[0]} className={classes.IngredientPill}>{ig[0]}:{ig[1]}</span>)}
             </span>
             <p>PRICE: <strong>$ {props.ord.price}</strong></p>
         </div>

@@ -1,25 +1,21 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Order } from '../Components'
-import axios from '../Config/axios-order'
+import { useDispatch, useSelector } from 'react-redux'
+import { getOrders } from '../Store/action'
 
 const Orders = () => {
 
-    const [orders, setOrders] = useState([])
+    const orders = useSelector(state => state.ord.orders)
+    const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('order.json')
-        .then(res => {
-            var dataVar = []
-            for (let key in res.data) dataVar.push({...res.data[key], id:key})
-            setOrders(dataVar)
-        })
-        .catch(err => console.log(err))
-    }, [])
+        dispatch(getOrders())
+    }, [dispatch])
 
     return (
-        <div>
+        <React.Fragment>
             {orders.map((ord,id) => <Order key={id} ord={ord} />)}
-        </div>
+        </React.Fragment>
     )
 }
 

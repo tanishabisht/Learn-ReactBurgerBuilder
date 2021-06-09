@@ -1,21 +1,17 @@
 # Burger Builder React Application
 This application is my goto guide for best practices in React.
 
+
 ## Folder Structure
-- public
-  - favicon.ico
-  - index.html
+- public: contains root html file
 - src
-  - Components
-    - Burger
-  - Container
-    - Layout
-      - Navbar
-      - Layout
-    - Aux (Similar to React.Fragment)
-  - Pages
-  - Config
-    - axios
+  - Config: contains backend configurations
+  - UI: contains components that are customized basic UI elements
+  - Helper: contains additional helper functions e.g. javascript functions to change obj to arr
+  - Components: Sub-components used in pages
+  - Pages: contains main pages of the application
+  - Store: contains redux logic
+
 
 ## Best Practices
 - Components should have these two important properties:
@@ -31,6 +27,9 @@ This application is my goto guide for best practices in React.
 - Efficient way to convert array to objects and vice versa
 - Establish routing if you have more than one pages to render
   - Routing best practices: refer [this](./Documentation/Routing.md)
+- One of the implementations for form creation is in the FormPage.js file
+  - Contains form validation
+
 
 ## Stacks Used
-`css modules` `Materialize` `prop-types` `axios`
+`css modules` `Materialize` `prop-types` `axios` `redux` `react-redux` `redux-thunk`

@@ -1,6 +1,8 @@
 import classes from './BuildControls.module.css'
 import Control from './Control'
 import { OrderModal } from '../index'
+import { useSelector } from 'react-redux'
+
 
 const LABEL_TO_TYPE = [
     { label:'Meat', type:'meat' },
@@ -10,6 +12,8 @@ const LABEL_TO_TYPE = [
 ]
 
 const BuildControls = props => {
+
+    const totalPrice = useSelector(state => state.totalPrice)
 
     const ingredientControls = LABEL_TO_TYPE.map((item,i) => {
         return <Control 
@@ -23,9 +27,9 @@ const BuildControls = props => {
     return (
         <div className={classes.BuildControls}>
             <h3 className={classes.Heading}>Build Controls</h3>
-            <h5>The Total Price is $ {props.totalPrice}</h5>
+            <h5>The Total Price is $ {totalPrice}</h5>
                 {ingredientControls}
-            <OrderModal ingredients={props.ingredients} totalPrice={props.totalPrice} orderIsDisabled={props.orderIsDisabled} />
+            <OrderModal totalPrice={totalPrice} orderIsDisabled={props.orderIsDisabled} />
         </div>
     )
 }
