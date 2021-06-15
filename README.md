@@ -1,5 +1,9 @@
 # Burger Builder React Application
-This application is my goto guide for best practices in React.
+This application is goto guide for best practices in React. This project is licensed under the terms of the MIT license. See all our contributors [here](contributors.md).
+
+
+## Want to Contribute?
+Refer [contributing.md](./contributing.md) for more info on what is expected in a contribution. 
 
 
 ## Folder Structure
@@ -13,7 +17,7 @@ This application is my goto guide for best practices in React.
   - Store: contains redux logic
 
 
-## Best Practices
+## Best Practices (Type 2)
 - Components should have these two important properties:
   - Modularity
   - Reusability
@@ -29,7 +33,18 @@ This application is my goto guide for best practices in React.
   - Routing best practices: refer [this](./Documentation/Routing.md)
 - One of the implementations for form creation is in the FormPage.js file
   - Contains form validation
+- Redux: for state management. Refer [this](./Documentation/Redux.md)
+
+
+## Repos with best practices (Type 1)
+| S.No | Name of the Repo (with link to the repo) | Contributor Name (with link to their gh profile) |
+|------|------------------------------------------|--------------------------------------------------|
+| 1 | [Burger-Builder](https://github.com/tanishabisht/MiniProj-ReactJS-Burger-Builder) | [tanishabisht](https://github.com/tanishabisht) |
 
 
 ## Stacks Used
 `css modules` `Materialize` `prop-types` `axios` `redux` `react-redux` `redux-thunk`
+
+
+## Want to make your repository ready for contribution? 
+Follow [this guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions) provided by github in github docs.
