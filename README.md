@@ -1,12 +1,12 @@
 # Burger Builder React Application
-This application is goto guide for best practices in React. This project is licensed under the terms of the MIT license. See all our contributors [here](contributors.md).
+This application is goto guide for best practices in React. See all our contributors [here](contributors.md).
 
 
 ## Want to Contribute?
 Refer [contributing.md](./contributing.md) for more info on what is expected in a contribution. 
 
 
-## Folder Structure
+## BurgerBuilder: Folder Structure
 - public: contains root html file
 - src
   - Config: contains backend configurations
