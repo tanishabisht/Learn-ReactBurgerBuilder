@@ -1,6 +1,7 @@
 # Learn - React Burger Builder Application
 This is the sixth installment of a seven-part series designed to improve your React development skills. This application is goto guide for best practices in React. 
 
+![gif not found](/demo.gif)
 
 ## Instructions to run the application
 Follow these instructions to get the application running:
@@ -13,7 +14,7 @@ Follow these instructions to get the application running:
    - To run the project : `npm start`
 
 
-## BurgerBuilder: Folder Structure
+## Folder Structure
 - public: contains root html file
 - src
   - Config: contains backend configurations
