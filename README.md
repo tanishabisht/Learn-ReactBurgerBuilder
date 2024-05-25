@@ -1,9 +1,16 @@
-# Burger Builder React Application
-This application is goto guide for best practices in React. See all our contributors [here](contributors.md).
+# Learn - React Burger Builder Application
+This is the sixth installment of a seven-part series designed to improve your React development skills. This application is goto guide for best practices in React. 
 
 
-## Want to Contribute?
-Refer [contributing.md](./contributing.md) for more info on what is expected in a contribution. 
+## Instructions to run the application
+Follow these instructions to get the application running:
+1. Install Node.js version 14.21.3:
+   - `nvm install v14.21.3`
+   - `nvm use v14.21.3`
+2. Install necessary packages:
+   - `npm install`
+3. Start the application:
+   - To run the project : `npm start`
 
 
 ## BurgerBuilder: Folder Structure
@@ -17,7 +24,7 @@ Refer [contributing.md](./contributing.md) for more info on what is expected in 
   - Store: contains redux logic
 
 
-## Best Practices (Type 2)
+## Best Practices
 - Components should have these two important properties:
   - Modularity
   - Reusability
@@ -36,15 +43,16 @@ Refer [contributing.md](./contributing.md) for more info on what is expected in 
 - Redux: for state management. Refer [this](./Documentation/Redux.md)
 
 
-## Repos with best practices (Type 1)
-| S.No | Name of the Repo (with link to the repo) | Contributor Name (with link to their gh profile) |
-|------|------------------------------------------|--------------------------------------------------|
-| 1 | [Burger-Builder](https://github.com/tanishabisht/MiniProj-ReactJS-Burger-Builder) | [tanishabisht](https://github.com/tanishabisht) |
-
-
-## Stacks Used
+## Technologies Used
 `css modules` `Materialize` `prop-types` `axios` `redux` `react-redux` `redux-thunk`
 
 
-## Want to make your repository ready for contribution? 
-Follow [this guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions) provided by github in github docs.
+## React Learning Series
+This project is part of a comprehensive React learning series:
+1. [React Application for User Listing](https://github.com/tanishabisht/Learn-ReactUsersListing)
+2. [Hooks in React](https://github.com/tanishabisht/Learn-ReactHooks)
+3. [State Management in React](https://github.com/tanishabisht/Learn-ReactStateManagement) 
+4. [Material-UI in React](https://github.com/tanishabisht/Learn-ReactMUI) 
+5. [Redux in React](https://github.com/tanishabisht/Learn-ReactRedux) 
+6. [Optimizing React Apps](https://github.com/tanishabisht/Learn-ReactOptimization) 
+7. [Building a Burger Builder App in React](https://github.com/tanishabisht/Learn-ReactBurgerBuilder) (this repository)
