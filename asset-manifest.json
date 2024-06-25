@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Learn-ReactBurgerBuilder/static/css/main.84ef9728.chunk.css",
+    "main.js": "/Learn-ReactBurgerBuilder/static/js/main.59ce53f2.chunk.js",
+    "main.js.map": "/Learn-ReactBurgerBuilder/static/js/main.59ce53f2.chunk.js.map",
+    "runtime-main.js": "/Learn-ReactBurgerBuilder/static/js/runtime-main.4f3e14e9.js",
+    "runtime-main.js.map": "/Learn-ReactBurgerBuilder/static/js/runtime-main.4f3e14e9.js.map",
+    "static/js/2.51586a53.chunk.js": "/Learn-ReactBurgerBuilder/static/js/2.51586a53.chunk.js",
+    "static/js/2.51586a53.chunk.js.map": "/Learn-ReactBurgerBuilder/static/js/2.51586a53.chunk.js.map",
+    "index.html": "/Learn-ReactBurgerBuilder/index.html",
+    "static/css/main.84ef9728.chunk.css.map": "/Learn-ReactBurgerBuilder/static/css/main.84ef9728.chunk.css.map",
+    "static/js/2.51586a53.chunk.js.LICENSE.txt": "/Learn-ReactBurgerBuilder/static/js/2.51586a53.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f3e14e9.js",
+    "static/js/2.51586a53.chunk.js",
+    "static/css/main.84ef9728.chunk.css",
+    "static/js/main.59ce53f2.chunk.js"
+  ]
+}
